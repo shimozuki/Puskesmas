@@ -105,7 +105,7 @@
       </li>
         
         <!-- Nav Item - RM Collapse Menu -->
-      <li class="nav-item {{ set_menu(['rm', 'rm.tambah', 'rm.edit','rm.list','rm.lihat','rm.tambah.id','tagihan']) }}">
+      <!-- <li class="nav-item {{ set_menu(['rm', 'rm.tambah', 'rm.edit','rm.list','rm.lihat','rm.tambah.id','tagihan']) }}">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-file-signature"></i>
           <span>Rekam Medis</span>
@@ -116,7 +116,7 @@
             <a class="collapse-item {{ set_menu(['rm.tambah','rm.tambah.id']) }}" href="{{ route('rm.tambah') }}">Tambah RM</a>       
           </div>
         </div>
-      </li>
+      </li> -->
         
 
       <!-- Divider -->

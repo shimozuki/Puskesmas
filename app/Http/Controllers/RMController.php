@@ -214,7 +214,7 @@ class RMController extends Controller
         return view('tambah-rm',compact('metadatas','idens','pasiens','cont','labs','obats','dokters'));  
     }
     
-           public function simpan_rm(Request $request)
+    public function simpan_rm(Request $request)
     {  
 
         $this->validate($request, [
@@ -305,8 +305,8 @@ class RMController extends Controller
                     $buka=route('rm.edit',$ids->id);
                     $pesan='Data Rekam Medis berhasil disimpan!';
                 break;             
-                case 'simpan_baru': 
-                    $buka=route('rm.tambah.id',$request->idpasien);;
+                case 'simpan_tagihan': 
+                    $buka=route('tagihan',$ids->id);;
                     $pesan='Data Rekam Medis berhasil disimpan!';
                 break;
             }
@@ -317,7 +317,7 @@ class RMController extends Controller
     
     public function tagihan($id)
     {
-        $metadatas = ambil_satudata('metadata',14);
+        $metadatas = ambil_satudata('metadata',21);
         $datas= ambil_satudata('rm',$id);
         foreach ($datas as $data) {
             //mencari id pasien dari id RM

@@ -34,7 +34,7 @@ class RMController extends Controller
             'diagnosis' => 'required|max:40',
             'dokter' => 'required',
         ]);
-       // Decoding array input pemeriksaan lab
+       // Decoding array input pemeriksaan lab  
        if (isset($request->lab))
        {
             if (has_dupes(array_column($request->lab,'id'))){
